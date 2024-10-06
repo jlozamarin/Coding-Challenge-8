@@ -8,7 +8,8 @@ class Employee {
         this.department = department;
     }
     getDetails() {
-        return `${this.name} - Position: ${this.position}, Salary: $${this.salary}`; 
+            return `${this.name} - Position: ${this.position}, Salary: $${this.salary}`; 
+        }
     }
 
 // Employee Data:
