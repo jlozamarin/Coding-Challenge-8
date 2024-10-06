@@ -34,3 +34,15 @@ console.log(`Total salary with bonuses for Finance: $${finance.calculateTotalSal
 
 console.log(`Total salary for Marketing Department: $${marketing.getDepartmentSalary()}`);
 console.log(`Total salary with bonuses for Marketing: $${marketing.calculateTotalSalaryWithBonus()}`);
+
+// Task 2: 
+class Department {
+    constructor(name) {
+        this.name = name; 
+        this.employees = []; 
+    }
+    addEmployee(employee) {
+        this.employees.push(employee);
+    }
+    getDepartmentSalary() {
+        return this.employees.reduce((total, employee) => total + employee.salary, 0);
