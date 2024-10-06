@@ -45,4 +45,7 @@ class Department {
         this.employees.push(employee);
     }
     getDepartmentSalary() {
-        return this.employees.reduce((total, employee) => total + employee.salary, 0);
+                return this.employees.reduce((total, employee) => total + employee.salary, 0);
+            }
+        }
+        
