@@ -51,7 +51,7 @@ let jesenia = new Employee("Jesenia Chatman", 80000, "Digital Marketing Associat
 let brianna = new Employee("Brianna Deaubler", 70000, "Marketing Researcher", "Marketing");
 
 // Add employees to departments
-finance.addManager(isabella);
+finance.addEmployee(isabella);
 marketing.addEmployee(jesenia);
 marketing.addEmployee(brianna);
 
