@@ -22,9 +22,10 @@ class Department {
         this.employees.push(employee);
     }
     getDepartmentSalary() {
-                return this.employees.reduce((total, employee) => total + employee.salary, 0);
-            }
-        }
+        //return the total salary of all employees in the department
+        return this.employees.reduce((total, employee) => total + employee.salary, 0);
+    }
+}
 
 
 // Task 3: Create a Manager Class that Inherits from Employee
