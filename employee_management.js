@@ -46,13 +46,13 @@ class Manager extends Employee {
     }
 }
 
-
+// Task 5: Create and Manage Departments and Employees
 
 // Departments
 let finance = new Department("Finance");
 let marketing = new Department("Marketing");
 
-// Employees
+// New Employees & Managers
 let isabella = new Manager("Isabella Moore", 100000, "Finance Manager", "Finance", 10000);
 let jesenia = new Employee("Jesenia Chatman", 80000, "Digital Marketing Associate", "Marketing");
 let brianna = new Employee("Brianna Deaubler", 70000, "Marketing Researcher", "Marketing");
