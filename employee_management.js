@@ -27,7 +27,7 @@ class Department {
         }
 
 
-// Task 3: Manager Class Inherits from Employee Class
+// Task 3: Create a Manager Class that Inherits from Employee
 class Manager extends Employee {
     constructor(name, salary, position, department, bonus) {
         super(name, salary, position, department);
@@ -38,8 +38,12 @@ class Manager extends Employee {
     }
 }
 
-
-
+// Task 4: Handle Bonuses for Managers
+calaculateTotalSalaryWithBonus() {
+    return this.employees.reduce((total, employee) => 
+        total + employee.salary + (employee.bonus || 0), 0
+    );
+}
 
 // Departments
 let finance = new Department("Finance");
