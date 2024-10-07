@@ -12,7 +12,7 @@ class Employee {
         }
     }
 
-// Task 2: 
+// Task 2: Create a Department Class
 class Department {
     constructor(name) {
         this.name = name; 
@@ -27,7 +27,19 @@ class Department {
         }
 
 
-        // Employee Data:
+// Task 3: Manager Class Inherits from Employee Class
+class Manager extends Employee {
+    constructor(name, salary, position, department, bonus) {
+        super(name, salary, position, department);
+        this.bonus = bonus;
+    }
+    getDetails() {
+        return `${super.getDetails()} - Bonus: $${this.bonus}`;
+    }
+}
+
+
+
 
 // Departments
 let finance = new Department("Finance");
@@ -39,7 +51,7 @@ let jesenia = new Employee("Jesenia Chatman", 80000, "Digital Marketing Associat
 let brianna = new Employee("Brianna Deaubler", 70000, "Marketing Researcher", "Marketing");
 
 // Add employees to departments
-finance.addEmployee(isabella);
+finance.addManager(isabella);
 marketing.addEmployee(jesenia);
 marketing.addEmployee(brianna);
 
