@@ -25,6 +25,13 @@ class Department {
         //return the total salary of all employees in the department
         return this.employees.reduce((total, employee) => total + employee.salary, 0);
     }
+
+    // Task 4: Handle Bonuses for Managers
+    calculateTotalSalaryWithBonus() {
+        return this.employees.reduce((total, employee) => 
+            total + employee.salary + (employee.bonus || 0), 0
+        );
+    }  
 }
 
 
@@ -39,12 +46,6 @@ class Manager extends Employee {
     }
 }
 
-// Task 4: Handle Bonuses for Managers
-calaculateTotalSalaryWithBonus(); {
-    return this.employees.reduce((total, employee) => 
-        total + employee.salary + (employee.bonus || 0), 0
-    );
-}
 
 
 // Departments
