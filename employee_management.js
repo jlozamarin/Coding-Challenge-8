@@ -63,8 +63,8 @@ marketing.addEmployee(jesenia);
 marketing.addEmployee(brianna);
 
 // Total salary of the department
-console.log(`Total salary for Finance department: $${finance.getDepartmentSalary()}`); //Output: Total salary for Finance department: $110000
-console.log(`Total salary with bonuses for Finance: $${finance.calculateTotalSalaryWithBonus()}`); //Output: Total salary with bonuses for Finance: $120000
+console.log(`Total salary for Finance department: $${finance.getDepartmentSalary()}`); //Output: Total salary for Finance department: $100000
+console.log(`Total salary with bonuses for Finance: $${finance.calculateTotalSalaryWithBonus()}`); //Output: Total salary with bonuses for Finance: $110000
 
 console.log(`Total salary for Marketing Department: $${marketing.getDepartmentSalary()}`); //Output: Total salary for Marketing Department: $150000
 console.log(`Total salary with bonuses for Marketing: $${marketing.calculateTotalSalaryWithBonus()}`); //Output: Total salary with bonuses for Marketing: $150000
