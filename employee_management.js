@@ -39,10 +39,12 @@ class Manager extends Employee {
 }
 
 // Task 4: Handle Bonuses for Managers
-calaculateTotalSalaryWithBonus();
+calaculateTotalSalaryWithBonus(); {
     return this.employees.reduce((total, employee) => 
         total + employee.salary + (employee.bonus || 0), 0
     );
+}
+
 
 // Departments
 let finance = new Department("Finance");
